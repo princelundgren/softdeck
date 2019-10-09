@@ -11,11 +11,11 @@ void decodeMessage(String message) {
     //Perform computer lock!
     char tempCommand = modifierProcessing("k4C3131"); // Press and hold Win-key
     Keyboard.press(tempCommand); // Perform the command
-    delay(300);
+    delay(1000);
     //tempCommand = modifierProcessing("d9D4l"); // press l key
     //Keyboard.write(tempCommand); // Perform the command
     Keyboard.print("l");
-    delay(600);
+    delay(1000);
     tempCommand = modifierProcessing("k7G8"); // Release-all-keys
     Keyboard.write(tempCommand); // Perform the command
   } else if (message.startsWith("OK+CONN")) { // Message printed when connection is made

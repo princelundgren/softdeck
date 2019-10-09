@@ -277,14 +277,15 @@ public class DeviceControlActivity extends Activity implements View.OnClickListe
                 new Thread(new Runnable() {
                     public void run() {
                         Log.d("ManualPrinting", "Lock Button Pressed");
+                        vibe.vibrate(100);
                         sendSoftDeckMessage(getString(R.string.softdeck_release_all_keys)); // Release-all-keys
-                        customSleepThread(500);
+                        customSleepThread(1000);
                         sendSoftDeckMessage(getString(R.string.softdeck_press_and_hold) + getString(R.string.key_left_gui)); // Press-hold Win key
-                        customSleepThread(500);
+                        customSleepThread(1000);
                         sendSoftDeckMessage("l"); // Press-release l key
                         customSleepThread(1000);
                         sendSoftDeckMessage(getString(R.string.softdeck_release_all_keys)); // Release-all-keys
-                        customSleepThread(500);
+                        customSleepThread(1000);
                     }
                 }).start();
                 break;
@@ -293,7 +294,7 @@ public class DeviceControlActivity extends Activity implements View.OnClickListe
                     public void run() {
                         Log.d("ManualPrinting", "Password Button Pressed");
                         vibe.vibrate(100);
-                        sendSoftDeckMessage("mysecretpassword"); // Send password
+                        sendSoftDeckMessage("bCtwhq_&TEFAQaSs"); // Send password
                         customSleepThread(500);
                     }
                 }).start();
@@ -304,13 +305,13 @@ public class DeviceControlActivity extends Activity implements View.OnClickListe
                         Log.d("ManualPrinting", "NotePad++ Button Pressed");
                         vibe.vibrate(100);
                         sendSoftDeckMessage(getString(R.string.softdeck_release_all_keys)); // Release-all-keys
-                        customSleepThread(500);
+                        customSleepThread(1000);
                         sendSoftDeckMessage(getString(R.string.softdeck_press_and_release) + getString(R.string.key_left_gui)); // Press-release Win key
-                        customSleepThread(500);
+                        customSleepThread(1000);
                         sendSoftDeckMessage("notepad"); // Type notepad++ x32 standard directory executable
                         customSleepThread(1500);
                         sendSoftDeckMessage(getString(R.string.softdeck_press_and_release) + getString(R.string.key_return)); // Press-release Enter key
-                        customSleepThread(500);
+                        customSleepThread(1000);
                     }
                 }).start();
                 break;
