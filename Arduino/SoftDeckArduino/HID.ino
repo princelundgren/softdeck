@@ -39,6 +39,14 @@ void decodeMessage(String message) {
     Keyboard.releaseAll();
   } else {
     Serial.println("Normal string-print command");
+       //     Serial.println(message.length());
+
+   // char messageSplit[message.length()];
+   // message.toCharArray(messageSplit, message.length());
+
+      //  Serial.write((int)messageSplit);
+
+   // Keyboard.write(messageSplit);
     Keyboard.print(message);
   }
 }

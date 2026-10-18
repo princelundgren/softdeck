@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is not set"
+      "message": "ndk.dir in local.properties is C:\\Users\\Prince\\AppData\\Local\\Android\\Sdk\\ndk-bundle"
     },
     {
       "level": "INFO",
@@ -19,11 +19,15 @@
     },
     {
       "level": "INFO",
+      "message": "Considering C:\\Users\\Prince\\AppData\\Local\\Android\\Sdk\\ndk-bundle by ndk.dir"
+    },
+    {
+      "level": "INFO",
       "message": "Considering C:\\Users\\Prince\\AppData\\Local\\Android\\Sdk\\ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
-      "message": "No user requested version, choosing C:\\Users\\Prince\\AppData\\Local\\Android\\Sdk\\ndk-bundle which is version 20.0.5594570"
+      "message": "Found requested ndk.dir (C:\\Users\\Prince\\AppData\\Local\\Android\\Sdk\\ndk-bundle) which has version 20.0.5594570"
     }
   ]
 }
